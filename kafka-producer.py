@@ -33,8 +33,8 @@ class Producer(threading.Thread):
         #loop until the thread is stopped by checking the stop event
         while not self.stop_event.is_set():
             #Send two messages of type binary to the 'test' Topic
-            producer.send('test', b"test")
-            producer.send('test', b"Hola, mundo!")
+            producer.send('acs-topic', b"test")
+            producer.send('acs-topic', b"Hola, mundo!")
             #Sleep for 3 seconds
             time.sleep(3)
        
