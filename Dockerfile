@@ -19,4 +19,4 @@ EXPOSE 8001
 STOPSIGNAL SIGINT
 
 ENTRYPOINT ["python"]
-CMD ["kafka_producer.py"]
+CMD ["kafka-producer.py"]
